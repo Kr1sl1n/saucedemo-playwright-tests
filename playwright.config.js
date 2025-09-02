@@ -2,14 +2,29 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
   retries: 1,
   workers: 1,
-  use: {
-    baseURL: 'https://www.saucedemo.com/',
-    headless: false,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-    trace: 'on' 
-  },
+
+  projects: [
+    {
+      name: 'ui-tests',
+      testDir: './tests',
+      use: {
+        baseURL: 'https://www.saucedemo.com/',
+        headless: false,
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
+        trace: 'on',
+      },
+    },
+    {
+      name: 'api-tests',
+      testDir: './api-tests',
+      use: {
+        baseURL: 'https://petstore.swagger.io/v2',
+        headless: true,
+      },
+    },
+  ],
 });
+
