@@ -1,5 +1,6 @@
-#Playwright E2E Testing Project
-##Overview
+# Playwright E2E Testing Project
+
+## Overview
 
 This project demonstrates end-to-end testing using Playwright for both UI testing and API testing.
 
@@ -15,7 +16,7 @@ ui-tests → Contains all UI tests
 
 api-tests → Contains all API tests
 
-##Project Structure
+## Project Structure
 my-playwright-project/
 ├── api-tests/
 │   └── pet.spec.js          # API tests
@@ -27,8 +28,8 @@ my-playwright-project/
 ├── package.json
 └── README.md
 
-##Part 1: UI Testing (Saucedemo)
-###Features Tested
+## Part 1: UI Testing (Saucedemo)
+### Features Tested
 
 Login Functionality
 
@@ -54,7 +55,7 @@ Remove products from cart
 
 Verify cart total and product count
 
-###Automated Test Coverage
+### Automated Test Coverage
 Feature	Test Scenario	Expected Result	Automated
 Login	Standard user login	User successfully logs in	✅
 Login	Locked-out user	Login fails with error	✅
@@ -65,7 +66,7 @@ Cart	Add products to cart	Products appear in cart	✅
 Cart	Remove products from cart	Products removed from cart	✅
 Cart	Verify cart total & product count	Total price & count are correct	✅
 
-###Framework Architecture Notes
+### Framework Architecture Notes
 
 Project: ui-tests
 
@@ -84,13 +85,13 @@ Tests are grouped using test.describe
 Assertions validate content, functional behavior, and cart functionality
 
 Running UI Tests
-# Run only UI tests
+### Run only UI tests
 npx playwright test --project=ui-tests --ui
 
-# Run all tests (UI + API)
+### Run all tests (UI + API)
 npx playwright test --ui
 
-Part 2: API Testing (Swagger Petstore Demo)
+# Part 2: API Testing (Swagger Petstore Demo)
 Features Tested
 
 Full CRUD workflow for pets:
@@ -105,7 +106,7 @@ Delete: DELETE /pet/{petId}
 
 Verify deletion: GET deleted pet → 404
 
-Test Plan
+## Test Plan
 Feature	API Endpoint	Test Scenario	Expected Result	Automated
 Create Pet	POST /pet	Add a new pet	Response 200, body matches input	✅
 Read Pet	GET /pet/{petId}	Fetch pet by ID	Response 200, body contains pet	✅
@@ -153,13 +154,13 @@ Playwright HTML report shows project-wise results
 Logs show status and response body for every test
 
 Running API Tests
-# Run only API tests
+### Run only API tests
 npx playwright test --project=api-tests --ui
 
-# Run all tests (UI + API)
+### Run all tests (UI + API)
 npx playwright test --ui
 
-Notes for Reviewers
+## Notes for Reviewers
 
 Some API tests may display warnings due to public Swagger API instability
 
