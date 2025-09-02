@@ -114,7 +114,7 @@ Update Pet	PUT /pet	Update pet details	Response 200, body reflects update	✅
 Delete Pet	DELETE /pet/{petId}	Delete pet	Response 200	✅
 Verify Deletion	GET deleted pet	Attempt to fetch deleted pet	Response 404	✅
 
-##Automated Test Coverage
+## Automated Test Coverage
 
 All API tests are written in api-tests/pet.spec.js
 
