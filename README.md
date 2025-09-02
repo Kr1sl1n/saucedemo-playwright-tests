@@ -1,5 +1,5 @@
-Playwright E2E Testing Project
-Overview
+#Playwright E2E Testing Project
+##Overview
 
 This project demonstrates end-to-end testing using Playwright for both UI testing and API testing.
 
@@ -15,7 +15,7 @@ ui-tests → Contains all UI tests
 
 api-tests → Contains all API tests
 
-Project Structure
+##Project Structure
 my-playwright-project/
 ├── api-tests/
 │   └── pet.spec.js          # API tests
@@ -27,8 +27,8 @@ my-playwright-project/
 ├── package.json
 └── README.md
 
-Part 1: UI Testing (Saucedemo)
-Features Tested
+##Part 1: UI Testing (Saucedemo)
+###Features Tested
 
 Login Functionality
 
@@ -54,7 +54,7 @@ Remove products from cart
 
 Verify cart total and product count
 
-Automated Test Coverage
+###Automated Test Coverage
 Feature	Test Scenario	Expected Result	Automated
 Login	Standard user login	User successfully logs in	✅
 Login	Locked-out user	Login fails with error	✅
@@ -64,7 +64,8 @@ Products	Sort by price descending	Sorted correctly	✅
 Cart	Add products to cart	Products appear in cart	✅
 Cart	Remove products from cart	Products removed from cart	✅
 Cart	Verify cart total & product count	Total price & count are correct	✅
-Framework Architecture Notes
+
+###Framework Architecture Notes
 
 Project: ui-tests
 
