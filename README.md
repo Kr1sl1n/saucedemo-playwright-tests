@@ -113,7 +113,8 @@ Read Pet	GET /pet/{petId}	Fetch pet by ID	Response 200, body contains pet	✅
 Update Pet	PUT /pet	Update pet details	Response 200, body reflects update	✅
 Delete Pet	DELETE /pet/{petId}	Delete pet	Response 200	✅
 Verify Deletion	GET deleted pet	Attempt to fetch deleted pet	Response 404	✅
-Automated Test Coverage
+
+##Automated Test Coverage
 
 All API tests are written in api-tests/pet.spec.js
 
@@ -127,19 +128,19 @@ Demonstrates full CRUD workflow with Playwright API testing
 
 Framework Architecture Notes
 
-Playwright Projects:
+### Playwright Projects:
 
 ui-tests → Saucedemo UI testing
 
 api-tests → Swagger Petstore API testing
 
-Base URLs:
+### Base URLs:
 
 UI: https://www.saucedemo.com/
 
 API: https://petstore.swagger.io/v2 (public demo server)
 
-Resilience:
+### Resilience:
 
 Public Swagger API may return 405/500 or empty responses
 
@@ -147,7 +148,7 @@ Tests log warnings instead of failing when the API is temporarily down
 
 Demonstrates correct Playwright API testing workflow without crashing
 
-Reporting:
+### Reporting:
 
 Playwright HTML report shows project-wise results
 
