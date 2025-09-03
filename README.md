@@ -64,15 +64,17 @@ Remove products from cart
 Verify cart total and product count
 
 ### Automated Test Coverage
-Feature	Test Scenario	Expected Result	Automated
-Login	Standard user login	User successfully logs in	✅
-Login	Locked-out user	Login fails with error	✅
-Products	Verify inventory	Products are displayed correctly	✅
-Products	Sort by price ascending	Sorted correctly	✅
-Products	Sort by price descending	Sorted correctly	✅
-Cart	Add products to cart	Products appear in cart	✅
-Cart	Remove products from cart	Products removed from cart	✅
-Cart	Verify cart total & product count	Total price & count are correct	✅
+
+| Feature | Test Scenario | Expected Result | Automated |
+|---------|---------------|----------------|-----------|
+| Login | Standard user login | User successfully logs in | ✅ |
+| Login | Locked-out user | Login fails with error | ✅ |
+| Products | Verify inventory | Products are displayed correctly | ✅ |
+| Products | Sort by price ascending | Sorted correctly | ✅ |
+| Products | Sort by price descending | Sorted correctly | ✅ |
+| Cart | Add products to cart | Products appear in cart | ✅ |
+| Cart | Remove products from cart | Products removed from cart | ✅ |
+| Cart | Verify cart total & product count | Total price & count are correct | ✅ |
 
 ### Framework Architecture Notes
 
@@ -92,7 +94,7 @@ Tests are grouped using test.describe
 
 Assertions validate content, functional behavior, and cart functionality
 
-Running UI Tests
+## Running UI Tests
 ### Run only UI tests
 npx playwright test --project=ui-tests --ui
 
@@ -115,12 +117,14 @@ Delete: DELETE /pet/{petId}
 Verify deletion: GET deleted pet → 404
 
 ## Test Plan
-Feature	API Endpoint	Test Scenario	Expected Result	Automated
-Create Pet	POST /pet	Add a new pet	Response 200, body matches input	✅
-Read Pet	GET /pet/{petId}	Fetch pet by ID	Response 200, body contains pet	✅
-Update Pet	PUT /pet	Update pet details	Response 200, body reflects update	✅
-Delete Pet	DELETE /pet/{petId}	Delete pet	Response 200	✅
-Verify Deletion	GET deleted pet	Attempt to fetch deleted pet	Response 404	✅
+
+| Feature | API Endpoint | Test Scenario | Expected Result | Automated |
+|---------|-------------|---------------|----------------|-----------|
+| Create Pet | POST /pet | Add a new pet | Response 200, body matches input | ✅ |
+| Read Pet | GET /pet/{petId} | Fetch pet by ID | Response 200, body contains pet | ✅ |
+| Update Pet | PUT /pet | Update pet details | Response 200, body reflects update | ✅ |
+| Delete Pet | DELETE /pet/{petId} | Delete pet | Response 200 | ✅ |
+| Verify Deletion | GET deleted pet | Attempt to fetch deleted pet | Response 404 | ✅ |
 
 ## Automated Test Coverage
 
