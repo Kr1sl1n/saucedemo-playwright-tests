@@ -16,6 +16,13 @@ ui-tests → Contains all UI tests
 
 api-tests → Contains all API tests
 
+## Running UI Tests
+### Run only UI tests
+npx playwright test --project=ui-tests --ui
+
+### Run only API tests
+npx playwright test --project=api-tests
+
 ## Project Structure
 ```
 saucedemo-tests/
@@ -93,13 +100,6 @@ Trace enabled for debugging
 Tests are grouped using test.describe
 
 Assertions validate content, functional behavior, and cart functionality
-
-## Running UI Tests
-### Run only UI tests
-npx playwright test --project=ui-tests --ui
-
-### Run only API tests
-npx playwright test --project=api-tests
 
 # Part 2: API Testing (Swagger Petstore Demo)
 Features Tested
