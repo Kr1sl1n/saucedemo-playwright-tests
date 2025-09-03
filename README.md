@@ -168,7 +168,7 @@ Logs show status and response body for every test
 
 Running API Tests
 ### Run only API tests
-npx playwright test --project=api-tests --ui
+npx playwright test --project=api-tests
 
 ### Run all tests (UI + API)
 npx playwright test --ui
