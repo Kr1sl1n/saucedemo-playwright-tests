@@ -17,17 +17,20 @@ ui-tests → Contains all UI tests
 api-tests → Contains all API tests
 
 ## Project Structure
+
+
+```text
 saucedemo-tests/
-├── api-tests/ # API tests
-│ └── pet.spec.js
-├── ui-tests/ # UI tests
-│ ├── login.spec.js
-│ ├── products.spec.js
-│ └── cart.spec.js
-├── node_modules/ # Installed dependencies (ignored by git)
-├── playwright-report/ # Playwright reports (ignored by git)
-├── test-results/ # Test results (ignored by git)
-├── playwright.config.js # Playwright config for UI + API
+├── api-tests/              # API tests
+│   └── pet.spec.js
+├── ui-tests/               # UI tests
+│   ├── login.spec.js
+│   ├── products.spec.js
+│   └── cart.spec.js
+├── node_modules/           # Installed dependencies (ignored by git)
+├── playwright-report/      # Playwright reports (ignored by git)
+├── test-results/           # Test results (ignored by git)
+├── playwright.config.js    # Playwright config for UI + API
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
