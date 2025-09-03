@@ -98,9 +98,6 @@ Assertions validate content, functional behavior, and cart functionality
 ### Run only UI tests
 npx playwright test --project=ui-tests --ui
 
-### Run all tests (UI + API)
-npx playwright test --ui
-
 ### Run only API tests
 npx playwright test --project=api-tests
 
