@@ -17,9 +17,7 @@ ui-tests → Contains all UI tests
 api-tests → Contains all API tests
 
 ## Project Structure
-
-
-```text
+```
 saucedemo-tests/
 ├── api-tests/              # API tests
 │   └── pet.spec.js
@@ -35,7 +33,7 @@ saucedemo-tests/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-` ```text ... ``` `
+```
 
 
 ## Part 1: UI Testing (Saucedemo)
