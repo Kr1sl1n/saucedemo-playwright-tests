@@ -101,6 +101,9 @@ npx playwright test --project=ui-tests --ui
 ### Run all tests (UI + API)
 npx playwright test --ui
 
+### Run only API tests
+npx playwright test --project=api-tests
+
 # Part 2: API Testing (Swagger Petstore Demo)
 Features Tested
 
@@ -165,13 +168,6 @@ Demonstrates correct Playwright API testing workflow without crashing
 Playwright HTML report shows project-wise results
 
 Logs show status and response body for every test
-
-Running API Tests
-### Run only API tests
-npx playwright test --project=api-tests
-
-### Run all tests (UI + API)
-npx playwright test --ui
 
 ## Notes for Reviewers
 
