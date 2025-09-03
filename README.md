@@ -35,8 +35,8 @@ saucedemo-tests/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-```` ``` ````
-text```
+` ```text ... ``` `
+
 
 ## Part 1: UI Testing (Saucedemo)
 ### Features Tested
